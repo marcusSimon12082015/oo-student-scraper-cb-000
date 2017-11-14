@@ -13,23 +13,10 @@ Student
   .create_from_collection
     uses the Scraper class to create new students with the correct name and location.
   #add_student_attributes
-    uses the Scraper class to get a hash of a given students attributes and uses that hash to set additional attributes for that student. (FAILED - 1)
+    uses the Scraper class to get a hash of a given students attributes and uses that hash to set additional attributes for that student.
+  .all
+    returns the class variable @@all
 
-Failures:
-
-  1) Student #add_student_attributes uses the Scraper class to get a hash of a given students attributes and uses that hash to set additional attributes for that student.
-     Failure/Error: expect(student.bio).to eq("I was in southern California for college (sun and In-n-Out!), rural Oregon for high school (lived in a town with 1500 people and 3000+ cows), and Tokyo for elementary/middle school.")
-
-       expected: "I was in southern California for college (sun and In-n-Out!), rural Oregon for high school (lived in a town with 1500 people and 3000+ cows), and Tokyo for elementary/middle school."
-            got: nil
-
-       (compared using ==)
-     # ./spec/student_spec.rb:49:in `block (3 levels) in <top (required)>'
-
-Finished in 0.09118 seconds (files took 0.41328 seconds to load)
-7 examples, 1 failure
-
-Failed examples:
-
-rspec ./spec/student_spec.rb:47 # Student #add_student_attributes uses the Scraper class to get a hash of a given students attributes and uses that hash to set additional attributes for that student.
+Finished in 0.06281 seconds (files took 0.47633 seconds to load)
+8 examples, 0 failures
 
