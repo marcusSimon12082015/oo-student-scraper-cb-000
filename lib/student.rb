@@ -7,7 +7,7 @@ class Student
   def initialize(student_hash)
     keys = student_hash.keys
     keys.each do |key|
-      self.instance_variable_set("@"+key,student_hash[key])
+      self.instance_variable_set("@"+key,student_hash[:key])
     end
   end
 
