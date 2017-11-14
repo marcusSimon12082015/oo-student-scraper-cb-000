@@ -9,3 +9,25 @@ Scraper
 Student
   #new
     takes in an argument of a hash and sets that new student's attributes using the key/value pairs of that hash. (FAILED - 1)
+
+Failures:
+
+  1) Student #new takes in an argument of a hash and sets that new student's attributes using the key/value pairs of that hash.
+     Failure/Error: self.instance_variable_set("@"+key,student_hash[:key])
+
+     TypeError:
+       no implicit conversion of Symbol into String
+     # ./lib/student.rb:11:in `+'
+     # ./lib/student.rb:11:in `block in initialize'
+     # ./lib/student.rb:10:in `each'
+     # ./lib/student.rb:10:in `initialize'
+     # ./spec/student_spec.rb:21:in `new'
+     # ./spec/student_spec.rb:21:in `block (2 levels) in <top (required)>'
+
+Finished in 0.06584 seconds (files took 0.3951 seconds to load)
+4 examples, 1 failure
+
+Failed examples:
+
+rspec ./spec/student_spec.rb:27 # Student #new takes in an argument of a hash and sets that new student's attributes using the key/value pairs of that hash.
+
