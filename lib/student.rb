@@ -5,7 +5,10 @@ class Student
   @@all = []
 
   def initialize(student_hash)
-    
+    keys = student_hash.keys
+    keys.each do |key|
+      self.instance_variable_set("@"+key,student_hash[key.to_sym])
+    end
   end
 
   def self.create_from_collection(students_array)
