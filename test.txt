@@ -1,31 +1,3 @@
 
 Scraper
   #scrape_index_page
-    is a class method that scrapes the student index page and a returns an array of hashes in which each hash represents one student
-  #scrape_profile_page
-    is a class method that scrapes a student's profile page and returns a hash of attributes describing an individual student
-    can handle profile pages without all of the social links
-
-Student
-  #new
-    takes in an argument of a hash and sets that new student's attributes using the key/value pairs of that hash.
-    adds that new student to the Student class' collection of all existing students, stored in the `@@all` class variable.
-  .create_from_collection
-    uses the Scraper class to create new students with the correct name and location. (FAILED - 1)
-
-Failures:
-
-  1) Student .create_from_collection uses the Scraper class to create new students with the correct name and location.
-     Failure/Error: expect(Student.class_variable_get(:@@all).first.name).to eq("Alex Patriquin")
-
-     NoMethodError:
-       undefined method `name' for nil:NilClass
-     # ./spec/student_spec.rb:42:in `block (3 levels) in <top (required)>'
-
-Finished in 0.05628 seconds (files took 0.47127 seconds to load)
-6 examples, 1 failure
-
-Failed examples:
-
-rspec ./spec/student_spec.rb:39 # Student .create_from_collection uses the Scraper class to create new students with the correct name and location.
-
