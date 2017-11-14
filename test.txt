@@ -9,22 +9,3 @@ Scraper
 Student
   #new
     takes in an argument of a hash and sets that new student's attributes using the key/value pairs of that hash. (FAILED - 1)
-
-Failures:
-
-  1) Student #new takes in an argument of a hash and sets that new student's attributes using the key/value pairs of that hash.
-     Failure/Error: expect(student.name).to eq("Alex Patriquin")
-
-       expected: "Alex Patriquin"
-            got: nil
-
-       (compared using ==)
-     # ./spec/student_spec.rb:29:in `block (3 levels) in <top (required)>'
-
-Finished in 0.06792 seconds (files took 0.41113 seconds to load)
-4 examples, 1 failure
-
-Failed examples:
-
-rspec ./spec/student_spec.rb:27 # Student #new takes in an argument of a hash and sets that new student's attributes using the key/value pairs of that hash.
-
